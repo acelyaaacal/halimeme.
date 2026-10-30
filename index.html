@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyi Ki Doğdun En Yakın Arkadaşım!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Yüzen Kalpler Arka Planı -->
+    <div class="floating-hearts-container" id="heartsBg"></div>
+
+    <!-- Hediye Kutusu -->
+    <div class="gift-wrapper" id="giftWrapper" onclick="openGift()">
+        <div class="gift-box">
+            <div class="bow"></div>
+            <div class="ribbon-v"></div>
+            <div class="ribbon-h"></div>
+        </div>
+        <div class="click-hint">Sana Bir Mesajım Var! 🎁<br><small style="font-size:0.8rem; font-weight:normal;">(Tıkla)</small></div>
+    </div>
+
+    <!-- Mektup Ekranı -->
+    <div class="letter-container" id="letterContainer">
+        <div class="letter-text" id="letterText"></div>
+        <button class="next-btn" id="nextBtn" onclick="startNightPhase()">Sonraki Adım ✨</button>
+    </div>
+
+    <!-- Yıldızlı Gece Arka Planı -->
+    <div class="stars-container" id="starsBg"></div>
+
+    <!-- Kanvas Kalp Ekranı -->
+    <div class="canvas-container" id="canvasContainer">
+        <canvas id="heartCanvas" width="320" height="320"></canvas>
+        <div class="final-message" id="finalMsg">İyi ki doğdun, iyi ki varsın! ❤️</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
